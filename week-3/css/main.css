@@ -88,25 +88,18 @@
      ========================================================================== */
   body {
     font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background-color:black;
+    /*keeps the edges not broken*/
   }
   
-  *{
-      margin:auto;
-  }
   /* CSS Rules for every page size */
-  body {
-    background-image:url(img/background.png);
-  }
   .header-div {
     display: flex;
     justify-content: center;
     background-color: black;
   }
-  .text-div {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-  }
+  
   .text{
     padding:10px;
     width:100%;
@@ -120,7 +113,7 @@
   header {
     padding: 10px;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
   }
   
   header > nav > ul {
@@ -134,12 +127,15 @@
     display: block;
     text-decoration: none;
   }
-  header{
-    width:90%;
-  }
+
 .container{
-    max-width:1200px;
-    width:90%;
+  background-image:url(img/background.png);
+  background-size:cover;
+  /*no more max width on container*/
+}
+.row{
+  max-width:1200px;
+  /*row is where we wanna limit the lenght cuz container is weird*/
 }
 .about{
    padding-top:20px;
@@ -163,6 +159,16 @@
     margin-top:30px;
     margin-bottom:30px;
     font-size: 16px;
+    cursor: pointer;
+  }
+
+.get {
+  border: 2px solid #ff9b51 ;
+  background-color:#ff9b51;
+  background-repeat:no-repeat;
+    color: rgb(255, 255, 255);
+    padding: 14px 28px;
+    font-size:16px;
     cursor: pointer;
   }
 
@@ -231,6 +237,10 @@ form .input-data{
     margin-bottom:30px;
 }
 
+.wrapper{
+background-color:white;
+}
+
 .text, .logo{
     background-color:#ffffff;
     padding:10px;
@@ -238,6 +248,19 @@ form .input-data{
 }
 .text{
     color:#c8c8ca;
+}
+
+.wrapper{
+  display:flex;
+  justify-content:center;
+  }
+  
+
+.text-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  max-width:1200px;
 }
 .dark-logo{
     background-color:black;
@@ -293,13 +316,19 @@ form .input-data{
     .row {
         display:flex;
         flex-direction:row;
-        max-width:1200px;
         margin:0 auto;
+        max-width:1200px;
       }
       .about h5{
         color:white;
         padding-top:20px;
         font-size:40px;
+    }
+    .text-div {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(255, 255, 255);
+      max-width:1200px;
     }
    
     .free, .Started, .Input{
@@ -309,9 +338,9 @@ form .input-data{
           margin-right:60px;
       }
       .container{
-        max-width:1200px;
         padding:50px;
     }
+  
     img{
         max-width:100%;
     }
