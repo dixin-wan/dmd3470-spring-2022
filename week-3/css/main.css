@@ -133,8 +133,12 @@
   background-size:cover;
   /*no more max width on container*/
 }
+.text-div{
+  padding-left:10px;
+}
 .row{
   max-width:1200px;
+  padding-left:10px;
   /*row is where we wanna limit the lenght cuz container is weird*/
 }
 .about{
@@ -145,6 +149,7 @@
     color: rgb(134, 134, 134);
     padding-top:20px;
     padding-bottom:20px;
+    
 }
 .about h5{
     color:white;
@@ -237,10 +242,6 @@ form .input-data{
     margin-bottom:30px;
 }
 
-.wrapper{
-background-color:white;
-}
-
 .text, .logo{
     background-color:#ffffff;
     padding:10px;
@@ -253,6 +254,7 @@ background-color:white;
 .wrapper{
   display:flex;
   justify-content:center;
+  background-color:white;
   }
   
 
@@ -276,8 +278,11 @@ background-color:white;
 .logo{
   color:#cccccc;
   font-size:50px;
-  display:block;
-  text-align:center;
+  background-color: white;
+  display:flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo i{
   padding:10px;
@@ -313,16 +318,24 @@ background-color:white;
         /* making unorderded list a flex box container*/
         display: flex;
     }
-    .row {
+    .row{
         display:flex;
         flex-direction:row;
         margin:0 auto;
         max-width:1200px;
       }
+      .about p{
+        color: rgb(134, 134, 134);
+        padding-top:20px;
+        padding-bottom:20px;
+    }
       .about h5{
         color:white;
         padding-top:20px;
         font-size:40px;
+    }
+    .row, .wrapper{
+      padding:0;
     }
     .text-div {
       display: flex;
