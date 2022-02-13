@@ -92,6 +92,9 @@
     background-color:black;
     /*keeps the edges not broken*/
   }
+  *{
+    box-sizing:border-box;
+  }
   
   /* CSS Rules for every page size */
   .header-div {
@@ -220,14 +223,15 @@
 }
 
 .Input .input-data label{
-  position:absolute;
+  /*position:absolute;*/
   bottom:10px;
   color:grey;
   pointer-events: none;
+  padding:20PX;
 }
-.input-data input:focus ~ label{
+/*.input-data input:focus ~ label{
   transform: translateY(-20px);
-}
+}*/
 
 form .input-data{
   position:relative;
