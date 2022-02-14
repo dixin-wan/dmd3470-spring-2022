@@ -81,68 +81,101 @@
    body {
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
-    background-color:black;
+    background-color:white;
     /*keeps the edges not broken*/
   }
   *{
     box-sizing:border-box;
+    margin:0;
+    padding:0;
   }
   
-  /* CSS Rules for every page size */
-  .header-div {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-  }
-  
-  header {
-    padding: 10px;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  header > nav > ul {
-    list-style-type: none;
-    padding: 0px;
-  }
-  
-  header > nav > ul a {
-    color: white;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-  }
-  textarea {
-    resize: vertical;
+  li, a {
+   font-size:16px;
+   text-decoration:none;
+   color:rgb(255, 255, 255);
+   font-weight:500;
   }
   header{
     background-color:#55727a;
-    color:white;
+    padding: 30px 10%;
   }
-  .fa-solid{
-    color:white;
+  img{
+    width:30px; 
+    fill:white;
+  }
+  .logo{
+    cursor:pointer;
+  }
+  .first-ul{
+    list-style:none;
+  }
+  .first-ul li{
+   display: block;
+   padding: 10px 0px;
+   
+  }
+  .second-ul li{
+    padding: 10px 0px;
+  }
+  .first-ul li a{
+     transition:all 0.3s ease 0s;
+  }
+  .first-ul li a:hover{
+    transition: all 0.3s ease 0s;
+    color:#ffffff;
+    background-color:#3e5e6c;
+    padding:10px;
+    border-radius: 5px;
+  }
+  .second-ul li a{
+    transition:all 0.3s ease 0s;
+ }
+ .first-ul li a{
+  transition:all 0.3s ease 0s;
+}
+ .second-ul li a:hover{
+   transition: all 0.3s ease 0s;
+   color:#ffffff;
+   background-color:#3e5e6c;
+   padding:10px;
+   border-radius: 5px;
+   
+ }
+  .second-ul{
+    list-style:none;
+  }
 
-  }
-  i{
-    color:white;
-    font-size: 20px;
-  }
-  header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    max-width:1200px;
-}
-header> nav > ul{
-    /* making unorderded list a flex box container*/
-    display: flex;
-}
-.fa-inbox-full{
-  color:white;
-}
+  /* CSS Rules for every page size */
 
+  
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
   
+@media(min-width:980px){
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 10%;
+  }
+  .first-ul{
+    display:flex;
+    flex-direction: row;
 
+  }
+  .first-ul li{
+   padding:0px 20px;
+   
+  }
+  .second-ul{
+    display:flex;
+    flex-direction:row;
+  }
+  .second-ul li{
+    display: block;
+     padding: 0px 20px;
+  }
+  
+}
