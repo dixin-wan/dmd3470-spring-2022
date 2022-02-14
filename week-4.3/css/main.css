@@ -44,12 +44,28 @@ section{
 }
 
 .tour{
-    background-color:rgba(255, 146, 83, 0.5);
+    border: 1px solid rgb(0, 0, 0);
+    background-color:#803e00;
+    
     padding:10px 20px;
     color:white;
     font-weight:600;
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
 }
+.tour:hover{
+    transition: all 0.3s ease 0s;
+    color:#ffffff;
+    background-color:rgba(255, 146, 83, 0.5);
+    padding:10px;
+    border-radius: 5px;
+    padding:15px 25px;
+    border-radius: 8px;
+  }
+  .tour{
+    transition:all 0.3s ease 0s;
+ }
 .logo{
     width:50px;
 
