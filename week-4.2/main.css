@@ -10,8 +10,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
-
    *{
     box-sizing:border-box;
   }
@@ -29,11 +27,13 @@ html{
 }
 .row {
   display:flex;
-  flex-direction:row;
-  width:1100px;
+  flex-direction:column;
+  max-width:1100px;
   margin:0 auto;
 }
-
+p{
+  color:rgb(87, 87, 87);
+}
 .header, h1{
   color:rgb(255, 255, 255);
  
@@ -41,11 +41,7 @@ html{
   align-items: flex-start;
 }
 
-p{
-    color:rgb(87, 87, 87);
-}
 .triplet,.triplet2,.triplet3{
-  width: 30%;
   margin:20px;
   background-color:white;
   box-shadow: rgb(121, 121, 121) 1px 1px 10px;
@@ -62,6 +58,22 @@ p{
     background-color:white;
     padding:20px;
 }
+   @media(min-width:980px){
+.row {
+  display:flex;
+  flex-direction:row;
+  width:1100px;
+  margin:0 auto;
+}
+
+.triplet,.triplet2,.triplet3{
+  width: 30%;
+  margin:20px;
+  background-color:white;
+  box-shadow: rgb(121, 121, 121) 1px 1px 10px;
+}
+
+   }
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
