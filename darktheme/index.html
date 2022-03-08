@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Teko:wght@700&display=swap" rel="stylesheet">
+    <title>Dark-Theme</title>
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">FACTS</a></li>
+            <li><a href="">TUTORIAL</a></li>
+            <li><a href="">PLUGINS</a></li>
+        </ul>
+        <img src="images/moon.png" id="icon">
+    </nav>
+    <div class="row">
+    <div class="info">
+        <h1>Cindy's <span>Multi</span> Theme</h1>
+        <p>This is my offical presentation website to demostrate my knowlege related to the dark theme <br>web development and UI design.</p>
+        <a href="">Download Theme</a>
+    </div>
+
+    <div class="img-box">
+        <img src="images/cloud.png" class="back-img">
+        <img src="images/phone.png" class="main-img">
+    </div>
+    </div>
+    <div class="about" id="about-slide">
+        <h1>Dark Theme Potentials</h1>
+        <p>Dark mode has gained a lot of traction recently. Like Apple, for instance, has added dark mode to its iOS and MacOS operating systems. Windows and Google have done the same. 
+        For example, The idea behind dark mode is that it reduces the light emitted by device screens while maintaining the minimum color contrast ratios required for readability. Both iPhones and Android handsets offer system-wide dark modes. </p>
+            
+
+    </div>
+    <div class="social-links">
+        <a href=""><i class="fab fa-github-square"></i></a>
+        <a href=""><i class="fab fa-behance"></i></a>
+        <a href=""><i class="fab fa-slack"></i></a>
+        <a href=""><i class="fab fa-apple"></i></a>
+    </div>
+</div>
+<script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+    //when we clicked on the icon the class name dark theme will get removed
+    if(document.body.classList.contains("dark-theme")){
+        icon.src ="images/sun.png";
+    }else{
+        icon.src="images/moon.png";
+    }
+    }
+</script>
+<script src="https://kit.fontawesome.com/de7c7602ed.js" crossorigin="anonymous"></script>
+</body>
+</html>
