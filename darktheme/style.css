@@ -8,7 +8,7 @@
     
     }
     .dark-theme{
-        --primary-color:#000106;
+        --primary-color:#002aff;
         --secondary-color:#fff;
     }
     
@@ -192,6 +192,11 @@ nav ul li{
     margin-left:8%;
     margin-bottom:20px;
     margin-top:20px;
+}
+.triplet{
+    width:30%;
+    margin:1%;
+    padding:20px;
 }
 }
 
