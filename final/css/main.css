@@ -90,7 +90,7 @@ textarea {
    }
    
    html {
-     color: #222;
+     color: #282828;
      font-size: 1em;
      line-height: 1.4;
      font-family: 'Exo', sans-serif;
@@ -130,7 +130,7 @@ textarea {
    
    .try{
      border:none;
-     background-color:salmon;
+     background-color:#ff6d6d;
      margin: 0;
      padding:10px 30px;
      color:white;
@@ -153,7 +153,7 @@ textarea {
      transition:all 0.3s ease 0s;
    }
    .pink ,span{
-     color:#de6743;
+     color:#ff6d6d;
    }
    .section2 .text{
      padding:20px;
@@ -217,26 +217,26 @@ textarea {
 
    .section5 h3{
      padding:10px;
-     color:#fff;
+     color:#b4b4b6;
    }
    .section5 p{
     padding:10px;
   }
 
   .section5 .gray{
-    color:#999;
+    color:#717171;
     font-style: italic;
   }
 
   .section5 a{
-    color:rgb(203, 203, 203);
+    color:#a6a7aa;
     font-size: 2em;
     padding:30px;
   }
 
   .section6{
     text-align: center;
-    background-color: rgb(223, 223, 223);
+    background-color: #f6f5f3;
   }
 
   .section6 .text{
@@ -250,7 +250,7 @@ textarea {
   }
 
 .section7{
-  background-color: rgb(47, 47, 85);
+  background-color: #323969;
   padding:4em;
   text-align: center;
   color:white;
@@ -258,12 +258,21 @@ textarea {
   flex-direction:column;
 }
 
+.section7 .purple{
+  color: #a0a2b6;
+
+}
 input{
-  background-color:rgb(47, 47, 85) ;
+  background-color:#323969 ;
   padding:10px;
-  border-color:white;
+  border: 1.5px solid white;
   border-radius: 4px;
 }
+.section7 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:#949494;
+  opacity: 1; /* Firefox */
+}
+
 
 .input{
   gap:20px;
@@ -272,7 +281,7 @@ input{
   padding:20px;
 }
 .section7 button{
-background-color:#de6743;
+background-color:#ff6d6d;
 padding-top:10px;
 padding-bottom:10px;
 border:none;
@@ -296,16 +305,27 @@ footer ul li{
 }
 
 footer input{
-  background-color: rgb(227, 227, 227);
-  border-color:rgb(207, 207, 207);
-  margin:20px;
+  background-color:#f6f6f6;
+  border: 1.5px solid #b8b8bf;
+  border-right: transparent;
+  border-radius: 4px 0px 0px 4px;
+  height:40px;
+
+ 
 }
 
-footer button{
-  background-color: #de6743;
+footer p{
+padding-top: 1em;
+}
+footer a {
   padding:10px;
+}
+footer button{
+  background-color: #ff6d6d;
+  position:absolute;
+  height:40px;
   border: none;
-  border-radius: 2px;
+  border-radius: 0px 2px 2px 0px;
 }
 
 .fa-paper-plane{
@@ -314,11 +334,21 @@ footer button{
 
 }
 
+footer ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #949494;
+  opacity: 1; /* Firefox */
+}
+
+
 footer a{
   color:rgb(203, 203, 203);
     font-size: 1.5em;
     padding-left: 20px;
     padding-right:20px;
+}
+
+footer h1{
+  padding-top:0;
 }
    @media(min-width:980px){
 
@@ -395,6 +425,14 @@ footer{
   gap:20px;
 }
 
+.news input{
+  width:200px;
+}
+
+.news{
+ text-align: start;
+  
+}
 
 footer p, .about,.support, footer input{
   width:25%;
